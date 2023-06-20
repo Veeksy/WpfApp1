@@ -1,0 +1,29 @@
+﻿<Window x:Class="WpfApp1.windows.ProductAddEdit"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1.windows"
+        mc:Ignorable="d"
+        Title="ProductAddEdit" Height="450" Width="800">
+    <Grid>
+        <StackPanel Margin="10">
+            <DockPanel Margin="10">
+                <TextBlock Margin="5" Text="Наименование"/>
+                <TextBox Margin="5" x:Name="nameTb"/>
+            </DockPanel>
+            <DockPanel Margin="10">
+                <TextBlock Margin="5" Text="Цена"/>
+                <TextBox Margin="5" x:Name="priceTb"/>
+            </DockPanel>
+            <DockPanel Margin="10">
+                <TextBlock Margin="5" Text="Категория"/>
+                <ComboBox Margin="5" x:Name="CategoryTb"/>
+            </DockPanel>
+            <DockPanel>
+                <Button Content="Назад" HorizontalAlignment="Left" Margin="5" x:Name="backBtn" Click="backBtn_Click"></Button>
+                <Button Content="Сохранить" HorizontalAlignment="Left" Margin="5" x:Name="saveBtn" Click="saveBtn_Click"></Button>
+            </DockPanel>
+        </StackPanel>
+    </Grid>
+</Window>

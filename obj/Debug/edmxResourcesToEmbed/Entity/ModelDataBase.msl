@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище JewelryModelContainer" CdmEntityContainer="JewelryEntities">
+    <EntitySetMapping Name="category">
+      <EntityTypeMapping TypeName="JewelryModel.category">
+        <MappingFragment StoreEntitySet="category">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="category1" ColumnName="category" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="orders">
+      <EntityTypeMapping TypeName="JewelryModel.orders">
+        <MappingFragment StoreEntitySet="orders">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="idProduct" ColumnName="idProduct" />
+          <ScalarProperty Name="count" ColumnName="count" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="products">
+      <EntityTypeMapping TypeName="JewelryModel.products">
+        <MappingFragment StoreEntitySet="products">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="idCategory" ColumnName="idCategory" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="count" ColumnName="count" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="users">
+      <EntityTypeMapping TypeName="JewelryModel.users">
+        <MappingFragment StoreEntitySet="users">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="login" ColumnName="login" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="role" ColumnName="role" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
